@@ -8,7 +8,6 @@
     <h1>Thymeleaf Page</h1>
     <h2>入力画面</h2>
     <p>値を入力してください。</p>
-    <!-- <p th:text="'前回入力された値は' + ${param.previous[0]} + 'でした。'"></p> -->
     <p th:if="${param.previous != null}" th:text="'前回入力された値は' + ${param.previous[0]} + 'でした。'">
     <form method="post" action="/output">
     <input type="text" name="previous">
